@@ -1,0 +1,46 @@
+
+this is the test file
+12|15|joe|2|N|15| | |
+12|15|joe|2|C| |a| |
+12|15|joe|2|C| | |05/11/2005|
+12|15|joe|2|D| | |05/11/2005|
+12|15|joe|2|D| | |05//2005|
+12|15|joe|2|N| |a| |
+12|15|joe|2|N| | | |
+12|15|joe|2|N|15.56| | |
+12|15|joe|2|N|15a.4| | |
+12|15|joe|2|N|15..6| | |
+12|15|joe|2|N|-15| | |
+12|15|joe|2|N|-15.56| | |
+12|15|joe|2|N|15.| | |
+12|15|joe|2|N|.3| | |
+12|15|joe|2|D| | |05/11/1899|
+12|15|joe|2|D| | |0/11/2001|
+12|15|joe|2|D| | |13/11/2001|
+12|15|joe|2|D| | |08/32/2001|
+12|15|joe|2|D| | |10/11/2001|
+12|15|joe|2|C| |dd||
+
+
+list below is what passes and what does not, if it does not pass the program needs to say why, also
+when priniting out which lines did not match and why the first line is line #1, not line #0
+OK --- 12|15|joe|2|N|15| | |
+OK --- 12|15|joe|2|C| |a| |
+No --- 12|15|joe|2|C| | |05/11/2005|
+OK --- 12|15|joe|2|D| | |05/11/2005|
+NO --- 12|15|joe|2|D| | |05//2005|
+NO --- 12|15|joe|2|N| |a| |
+NO --- 12|15|joe|2|N| | | |
+OK --- 12|15|joe|2|N|15.56| | |
+NO --- 12|15|joe|2|N|15a.4| | |
+NO --- 12|15|joe|2|N|15..6| | |
+OK --- 12|15|joe|2|N|-15| | |
+OK --- 12|15|joe|2|N|-15.56| | |
+OK --- 12|15|joe|2|N|15.| | |         (it has an integer portion)
+NO --- 12|15|joe|2|N|.3| | |        
+OK --- 12|15|joe|2|D| | |05/11/1899|
+NO --- 12|15|joe|2|D| | |0/11/2001|
+NO --- 12|15|joe|2|D| | |13/11/2001|
+NO --- 12|15|joe|2|D| | |08/32/2001|
+OK --- 12|15|joe|2|D| | |10/11/2001|
+NO --- 12|15|joe|2|C| |dd||           (one char only is allowed)
